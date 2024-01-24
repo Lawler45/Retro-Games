@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Darker Grotesque', sans-serif;
+  line-height: 1;
+  color: #fff; /* White text color for contrast */
+  background: linear-gradient(to bottom, #6a00ff, #001730); /* Purple to Navy Gradient Background */
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+
+}
+
+.btn {
+  font-size: 24px;
+  font-family: 'Darker Grotesque', sans-serif;
+  padding: 4px 20px 8px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #001730; /* Navy Color */
+  color: #001730; /* Navy Color */
+}
+
+.btn:hover {
+  background-color: #7da9cf; /* Lighter Blue on Hover */
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+}
+
+/* # Game grid */
+
+.game-board {
+  position: relative;
+  margin-bottom: 8px;
+  border: 2px solid #7e57c2; /* Dark Purple Border */
+  background-color: #9c27b0; /* Light Purple Background */
+}
+
+.game-container {
+  width: calc((48px * 6) + 4px);
+}
+
+.grid {
+  width: calc((48px * 6) + 4px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  outline: 1px dashed #7e57c2; /* Dark Purple Border */
+}
+
+.bar {
+  background-color: #4a148c; /* Dark Purple Bar Background */
+  border-radius: 8px;
+  border: 2px solid #7e57c2; /* Dark Purple Border */
+}
+
+/* # Game over */
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(78, 108, 155, 0.7); /* Semi-Transparent Blue */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+
+.win {
+  background-color: rgba(28, 106, 86, 0.7); /* Semi-Transparent Greenish Blue */
+}
+
+.end-game-text {
+  font-size: 48px;
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
+}
+
+/* # Utilities */
+
+.hidden {
+  display: none;
+}

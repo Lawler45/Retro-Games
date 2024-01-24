@@ -1,0 +1,124 @@
+* {
+  margin-left: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #6a00ff, #001730); /* Purple to Navy Gradient Background */
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.game-container {
+  width: 484px;
+}
+
+.game-board {
+  border: 2px solid #7e57c2; /* Dark Purple Border */
+  position: relative;
+  background-color: #9c27b0; /* Light Purple Background */
+}
+
+.score {
+  justify-content: space-between;
+  display: flex;
+  font-size: 32px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  border: 1px solid black;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.cell-bomb {
+  background-color: #f1754e; /* Orange-ish color for bombs */
+  background-image: url("./images/bomb.png");
+  background-size: contain;
+  cursor: not-allowed;
+}
+
+.cell-flag {
+  background-image: url("./images/flag.png");
+  background-size: contain;
+}
+
+.cell-number-low {
+  text-align: center;
+  color: green;
+}
+
+.cell-number-medium {
+  text-align: center;
+  color: orange;
+}
+
+.cell-number-high {
+  text-align: center;
+  color: red;
+}
+
+.end-game-screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: rgba(241, 117, 78, 0.5);
+}
+
+.win {
+  background-color: rgba(0, 200, 0, 0.5);
+}
+
+.end-game-text {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.btn {
+  font-size: 24px;
+  font-family: sans-serif;
+  padding: 4px 20px 4px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 2px solid #001730; /* Navy Color */
+}
+
+.btn:hover {
+  background-color: #7da9cf; /* Lighter Blue on Hover */
+}
+
+.hidden {
+  display: none;
+}
+
+.cell-clicked {
+  background-color: #9dc5c7; /* Light Blue-ish color for clicked cells */
+  cursor: not-allowed;
+}
