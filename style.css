@@ -5,7 +5,7 @@ body {
   background-color: #000;
   color: #fff;
   background-image: url("images/retro-background-2.jpg");
-  background-size: cover; 
+  background-size: cover;
 }
 
 .header {
@@ -52,7 +52,6 @@ body {
   height: 300px; /* Set a fixed height */
   overflow: hidden; /* Hide any overflow content */
   margin-top: 20vh;
-
 }
 
 .card-image {
